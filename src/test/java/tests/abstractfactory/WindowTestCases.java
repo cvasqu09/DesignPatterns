@@ -35,15 +35,7 @@ public class WindowTestCases {
 	@Test
 	public void MacWindow_renderBatch_secondItem() {
 		Window mac = new MacWindow(500, 200);
-		assertEquals(mac.getBatch().get(0), "Desktop Icons");
+		assertEquals(mac.getBatch().get(1), "Desktop Icons");
 	}
-	
-	@Test
-	public void MacWindow_renderBatch_thirdItem() {
-		Window mac = new MacWindow(500, 200);
-		assertEquals(mac.getBatch().get(0), "Mac wallpaper");
-	}
-	
-	
 
 }

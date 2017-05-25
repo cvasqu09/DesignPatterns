@@ -7,7 +7,6 @@ public class MacWindow extends Window{
 		name = "Mac Window";
 		renderBatch.add("Mac wallpaper");
 		renderBatch.add("Desktop Icons");
-		renderBatch.add("Mac wallpaper");
 	}
 
 	@Override
