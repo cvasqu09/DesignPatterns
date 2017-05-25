@@ -11,7 +11,7 @@ public class WindowTestCases {
 	@Test
 	public void WindowsWindow_renderBatch_firstItem() {
 		Window windows = new WindowsWindow(500, 200);
-		assertEquals(windows.getBatch().get(0), "Windows Wallpaper");
+		assertEquals(windows.getBatch().get(1), "Windows Wallpaper");
 	}
 	
 	@Test
