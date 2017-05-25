@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import packages.abstractfactory.*;
 
-public class WindowTestCases {
+public class WindowTest {
 
 	@Test
 	public void WindowsWindow_renderBatch_firstItem() {
