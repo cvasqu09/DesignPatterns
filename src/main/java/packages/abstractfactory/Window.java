@@ -27,4 +27,8 @@ public abstract class Window {
 	}
 	
 	abstract void render();
+	
+	public ArrayList<String> getBatch(){
+		return renderBatch;
+	}
 }
