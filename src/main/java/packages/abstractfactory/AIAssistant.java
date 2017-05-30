@@ -2,7 +2,7 @@ package packages.abstractfactory;
 
 import java.util.ArrayList;
 
-public class AIAssistant {
+public abstract class AIAssistant {
 	private String name;
 	private ArrayList<String> languages = new ArrayList<String>();
 	
@@ -19,4 +19,10 @@ public class AIAssistant {
 	public void printName(){
 		System.out.println(name);
 	}
+	
+	public void addLanguage(String language){
+		languages.add(language);
+	}
+	
+	public abstract String welcomeMessage();
 }
