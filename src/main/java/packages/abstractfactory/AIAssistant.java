@@ -16,6 +16,10 @@ public abstract class AIAssistant {
 		}
 	}
 	
+	public String getName(){
+		return name;
+	}
+	
 	public void printName(){
 		System.out.println(name);
 	}

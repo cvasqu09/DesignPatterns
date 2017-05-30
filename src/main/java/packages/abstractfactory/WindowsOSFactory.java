@@ -1,7 +1,10 @@
 package packages.abstractfactory;
 
 public class WindowsOSFactory implements OSFactory{
-    
+    public WindowsOSFactory(){
+    	
+    }
+	
 	public Window createWindow() {
 		return new WindowsWindow(500, 500);
 	}

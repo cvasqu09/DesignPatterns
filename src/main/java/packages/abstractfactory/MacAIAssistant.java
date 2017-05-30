@@ -12,7 +12,7 @@ public class MacAIAssistant extends AIAssistant{
 
 	@Override
 	public String welcomeMessage() {
-		return "Welcome -" + "Siri";
+		return "Welcome -" + name;
 	}
 
 }
