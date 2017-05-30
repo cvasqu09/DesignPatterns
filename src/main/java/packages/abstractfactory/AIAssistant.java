@@ -3,7 +3,7 @@ package packages.abstractfactory;
 import java.util.ArrayList;
 
 public abstract class AIAssistant {
-	private String name;
+	protected String name;
 	private ArrayList<String> languages = new ArrayList<String>();
 	
 	public AIAssistant(String n){

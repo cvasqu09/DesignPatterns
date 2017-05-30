@@ -2,8 +2,8 @@ package packages.abstractfactory;
 
 public class WindowsAIAssistant extends AIAssistant{
 
-	public WindowsAIAssistant(String n) {
-		super(n);
+	public WindowsAIAssistant() {
+		super("Cortana");
 		addLanguage("English");
 		addLanguage("German");
 		addLanguage("Spanish");
@@ -12,7 +12,7 @@ public class WindowsAIAssistant extends AIAssistant{
 
 	@Override
 	public String welcomeMessage() {
-		return "Windows AI Cortana";
+		return "Windows AI " + name ;
 	}
 	
 

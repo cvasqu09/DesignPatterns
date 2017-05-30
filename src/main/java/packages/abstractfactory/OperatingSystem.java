@@ -19,5 +19,9 @@ public abstract class OperatingSystem {
 	public Window getWindow() {
 		return window;
 	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
 
 }

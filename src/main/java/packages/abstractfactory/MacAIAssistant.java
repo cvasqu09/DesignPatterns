@@ -2,8 +2,8 @@ package packages.abstractfactory;
 
 public class MacAIAssistant extends AIAssistant{
 
-	public MacAIAssistant(String n) {
-		super(n);
+	public MacAIAssistant() {
+		super("Siri");
 		addLanguage("English");
 		addLanguage("Spansih");
 		addLanguage("German");
@@ -12,7 +12,7 @@ public class MacAIAssistant extends AIAssistant{
 
 	@Override
 	public String welcomeMessage() {
-		return "Welcome -Siri";
+		return "Welcome -" + "Siri";
 	}
 
 }
