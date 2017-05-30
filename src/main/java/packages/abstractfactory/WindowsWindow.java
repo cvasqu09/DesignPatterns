@@ -16,5 +16,4 @@ public class WindowsWindow extends Window {
 			System.out.println(renderBatch.get(i));
 		}
 	}
-
 }
