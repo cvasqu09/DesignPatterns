@@ -2,12 +2,16 @@ package packages.singleton;
 
 public class GameStateSingleton {
 	private static GameStateSingleton gameState = null;
+	private static int count = 0;
+	
 	long startTime;
 	long timeRunning;
-	boolean isPlaying;
+	static boolean isPlaying;
+	
 	private GameStateSingleton (){
 		startTime = System.currentTimeMillis();
 		isPlaying = false;
+		count++;
 	}
 	
 	public static GameStateSingleton getInstance(){
@@ -21,11 +25,21 @@ public class GameStateSingleton {
 		return System.currentTimeMillis() - startTime;
 	}
 	
+	public static int getCount(){
+		return count;
+	}
+	
 	public void startPlaying(){
 		isPlaying = true;
 	}
 	
 	public boolean isPlaying(){
 		return isPlaying;
+	}
+	
+	public static void reset(){
+		gameState = null;
+		count = 0;
+		isPlaying = false;
 	}
 }
